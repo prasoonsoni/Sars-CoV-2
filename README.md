@@ -17,6 +17,8 @@ Intended User
 - Logout option.
 ## User Interface Mocks
 ###### Screen 1 (Splash Screen)
+![image](https://user-images.githubusercontent.com/75159757/114435809-3b048c00-9be2-11eb-9c34-6be3ff895f3e.png)
+
 
 
 
