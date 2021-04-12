@@ -15,8 +15,8 @@ Intended User
 - All countries data search available.
 - Feedback form.
 - Logout option.
-# User Interface Mocks
-## Screen 1 (Splash Screen)
+## User Interface Mocks
+> Screen 1 (Splash Screen)
 ![image](https://user-images.githubusercontent.com/75159757/114435889-57a0c400-9be2-11eb-9eab-318111706a61.png)
 
 
