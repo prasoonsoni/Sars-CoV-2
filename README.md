@@ -18,6 +18,10 @@ Intended User
 ## User Interface Mocks
 > Screen 1 (Splash Screen)
 ![image](https://user-images.githubusercontent.com/75159757/114435889-57a0c400-9be2-11eb-9eab-318111706a61.png)
+> Screen 2 (Get Started Screen)
+![image](https://user-images.githubusercontent.com/75159757/114436155-a189aa00-9be2-11eb-824d-aa09e822ce03.png)
+
+
 
 
 
