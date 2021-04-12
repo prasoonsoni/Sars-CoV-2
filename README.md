@@ -38,6 +38,16 @@ Intended User
 > Screen 7 (Symptoms)
 ![image](https://user-images.githubusercontent.com/75159757/114437976-d139b180-9be4-11eb-9431-b6a28e70cf8d.png)
 
+> Screen 8 (Feedback Form)
+![image](https://user-images.githubusercontent.com/75159757/114438278-2a094a00-9be5-11eb-9047-c2e666da7bf9.png)
+
+> Screen 9 (About)
+![image](https://user-images.githubusercontent.com/75159757/114438804-da774e00-9be5-11eb-8648-c5974ed1c6a3.png)
+
+
+
+
+
 
 
 
