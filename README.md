@@ -1,5 +1,5 @@
 # Sars-CoV-2😷
-## Your personal pandemic assistant
+## Your personal pandemic assistant 📱
 Intended User
 > It can be used by anyone.
 ## Features
@@ -45,18 +45,51 @@ Intended User
 ![image](https://user-images.githubusercontent.com/75159757/114438804-da774e00-9be5-11eb-8648-c5974ed1c6a3.png)
 
 ## Key Considerations
-**1. How will your app handle data persistance ?**
-     - The app uses Firebase authentication for user registration and Firebase realtime database for storing all the feedbacks and suggestions given by the user.
-**2. Libraries used in the application.**
-     - Firebase libraries for data handling (VERSION: 19.3.0)
-     - Picasso (VERSION: 2.5.2)to handle the loading and caching of images.
-     - Volley library(VERSION: 1.2.0) for API calling and handling.
-     - Lottie library (VERSION: 3.4.0) for animations.
-     - Eazegraph library(VERSION: 1.2.5) for pie chart.
+1. **How will your app handle data persistance ?**
+     - ***The app uses Firebase authentication for user registration and Firebase realtime database for storing all the feedbacks and suggestions given by the user.***
+2. **Libraries used in the application.**
+     - ***Firebase libraries for data handling (VERSION: 19.3.0)***
+     - ***Picasso (VERSION: 2.5.2)to handle the loading and caching of images.***
+     - ***Volley library(VERSION: 1.2.0) for API calling and handling.***
+     - ***Lottie library (VERSION: 3.4.0) for animations.***
+     - ***Eazegraph library(VERSION: 1.2.5) for pie chart.***
 ## Required Tasks
-**This is the section where you can take the main features of your app (declared above)
+***This is the section where you can take the main features of your app (declared above)
 and break them down into tangible technical tasks that you can complete one at a
-time until you have a finished app.**
+time until you have a finished app.***
+1. **Task 1: Project Setup**
+     - * *Configure libraries* *
+     - * *Build UI for Splash Screen* *
+     - * *Build UI for Sign in / Sign up* *
+     - * *Setup of Firebase services* *
+
+2. **Implement UI for Each Activity**
+     - * *Build UI for MainActivity* *
+     - * *Setup the Navigation Drawer.* *
+     - * *Code implementation for the activities till task 2.* *
+3. **Implementation of Volley Library for fetching data**
+     - * *Implementation of Volley* *
+     - * *Fetch data from the API* *
+     - * *Show the fetched Data in the UI* *
+
+4. **Task 4: Additional Features**
+     - * *Implementing map for viewing your location* *
+     - * *Creating Precautions Activity* *
+     - * *Creating Symptoms Activity* *
+     - * *Creating About Activity* *
+## Declarations
+- ***This app is written solely in the Java Programming Language.***
+- ***The app enables RTL layout switching on all layouts.***
+- ***If it performs a short duration, on-demand requests (such as search), the app uses an AsyncTask.***
+- ***If it needs to pull or send data to/from a web service or API only once, or on a per request basis (such as a search application), the app uses an IntentService to do so.***
+- ******It uses Location of your device to show it on Map.***
+
+
+
+
+
+
+
 
 
 
