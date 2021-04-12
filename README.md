@@ -45,7 +45,7 @@ Intended User
 ![image](https://user-images.githubusercontent.com/75159757/114438804-da774e00-9be5-11eb-8648-c5974ed1c6a3.png)
 
 ## Key Considerations
-**1. How will your app handle data persistance ? **
+**1. How will your app handle data persistance ?**
      - The app uses Firebase authentication for user registration and Firebase realtime database for storing all the feedbacks and suggestions given by the user.
 **2. Libraries used in the application.**
      - Firebase libraries for data handling (VERSION: 19.3.0)
