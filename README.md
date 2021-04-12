@@ -26,7 +26,10 @@ Intended User
 ![image](https://user-images.githubusercontent.com/75159757/114436652-37253980-9be3-11eb-879a-391d570116a0.png)
 
 > Screen 4 (Home Screen)
-![image](https://user-images.githubusercontent.com/75159757/114436717-4d32fa00-9be3-11eb-8627-39419ead8994.png)
+![image](https://user-images.githubusercontent.com/75159757/114436905-879c9700-9be3-11eb-85e8-dea8e32af52a.png)
+![image](https://user-images.githubusercontent.com/75159757/114437141-c6cae800-9be3-11eb-9c50-b3c95900748d.png)
+
+
 
 
 
