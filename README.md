@@ -3,7 +3,20 @@
 Intended User
 > It can be used by anyone.
 ## Features
-![image](https://user-images.githubusercontent.com/75159757/114434920-31c6ef80-9be1-11eb-93cd-fe56cb4c463f.png)
+- Splash Screen.
+- Get Started Screen.
+- Sign in / Sign up.
+- Call & Send SMS to Covid helpline.
+- A small quiz related to Covid.
+- PM Relief Fund information available.
+- All Indian states Covid data.
+- Your Location information.
+- Precautions & Symptoms.
+- All countries data search available.
+- Feedback form.
+- Logout option.
+
+
 
 
 
