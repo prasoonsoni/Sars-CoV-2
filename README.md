@@ -29,6 +29,19 @@ Intended User
 ![image](https://user-images.githubusercontent.com/75159757/114437235-e6faa700-9be3-11eb-9b35-50400fba63d1.png)
 ![image](https://user-images.githubusercontent.com/75159757/114437141-c6cae800-9be3-11eb-9c50-b3c95900748d.png)
 
+> Screen 5 (Search Country)
+![image](https://user-images.githubusercontent.com/75159757/114437652-743dfb80-9be4-11eb-8148-6075b81a28d6.png)
+
+> Screen 6 (Precautions)
+![image](https://user-images.githubusercontent.com/75159757/114437701-85870800-9be4-11eb-8e4f-a4d17f60f10d.png)
+
+> Screen 7 (Symptoms)
+![image](https://user-images.githubusercontent.com/75159757/114437976-d139b180-9be4-11eb-9431-b6a28e70cf8d.png)
+
+
+
+
+
 
 
 
