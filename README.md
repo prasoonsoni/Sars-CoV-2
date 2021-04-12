@@ -48,11 +48,11 @@ Intended User
 1. How will your app handle data persistance ?
 The app uses Firebase authentication for user registration and Firebase realtime database for storing all the feedbacks and suggestions given by the user.
 2. Libraries used in the application.
-- Firebase libraries for data handling (VERSION: 19.3.0)
-- Picasso (VERSION: 2.5.2)to handle the loading and caching of images.
-- Volley library(VERSION: 1.2.0) for API calling and handling.
-- Lottie library (VERSION: 3.4.0) for animations.
-- Eazegraph library(VERSION: 1.2.5) for pie chart.
+  - Firebase libraries for data handling (VERSION: 19.3.0)
+  - Picasso (VERSION: 2.5.2)to handle the loading and caching of images.
+  - Volley library(VERSION: 1.2.0) for API calling and handling.
+  - Lottie library (VERSION: 3.4.0) for animations.
+  - Eazegraph library(VERSION: 1.2.5) for pie chart.
 
 
 
