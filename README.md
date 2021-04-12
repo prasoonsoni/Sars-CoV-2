@@ -1,4 +1,4 @@
-# Sars-CoV-2
+# Sars-CoV-2😷
 ## Your personal pandemic assistant
 Intended User
 > It can be used by anyone.
@@ -16,6 +16,8 @@ Intended User
 - Feedback form.
 - Logout option.
 ## User Interface Mocks
+###### Screen 1 (Splash Screen)
+
 
 
 
