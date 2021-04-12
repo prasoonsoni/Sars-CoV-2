@@ -58,31 +58,31 @@ Intended User
 and break them down into tangible technical tasks that you can complete one at a
 time until you have a finished app.***
 1. **Task 1: Project Setup**
-     - * *Configure libraries* *
-     - * *Build UI for Splash Screen* *
-     - * *Build UI for Sign in / Sign up* *
-     - * *Setup of Firebase services* *
+     - *Configure libraries*
+     - *Build UI for Splash Screen*
+     - *Build UI for Sign in / Sign up*
+     - *Setup of Firebase services*
 
 2. **Implement UI for Each Activity**
-     - * *Build UI for MainActivity* *
-     - * *Setup the Navigation Drawer.* *
-     - * *Code implementation for the activities till task 2.* *
+     - *Build UI for MainActivity*
+     - *Setup the Navigation Drawer.*
+     - *Code implementation for the activities till task 2.*
 3. **Implementation of Volley Library for fetching data**
-     - * *Implementation of Volley* *
-     - * *Fetch data from the API* *
-     - * *Show the fetched Data in the UI* *
+     - *Implementation of Volley*
+     - *Fetch data from the API*
+     - *Show the fetched Data in the UI*
 
 4. **Task 4: Additional Features**
-     - * *Implementing map for viewing your location* *
-     - * *Creating Precautions Activity* *
-     - * *Creating Symptoms Activity* *
-     - * *Creating About Activity* *
+     - *Implementing map for viewing your location*
+     - *Creating Precautions Activity*
+     - *Creating Symptoms Activity*
+     - *Creating About Activity*
 ## Declarations
 - ***This app is written solely in the Java Programming Language.***
 - ***The app enables RTL layout switching on all layouts.***
 - ***If it performs a short duration, on-demand requests (such as search), the app uses an AsyncTask.***
 - ***If it needs to pull or send data to/from a web service or API only once, or on a per request basis (such as a search application), the app uses an IntentService to do so.***
-- ******It uses Location of your device to show it on Map.***
+- ***It uses Location of your device to show it on Map.***
 
 
 
