@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bankingLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animated_bg"
+    tools:context=".banking">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomPrecautions"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/all_activity_bg"
+        android:elevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topOfLayouts">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/atmCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:alpha="0"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#3f3872"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:id="@+id/swiftNo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="left"
+                    android:paddingLeft="0dp"
+                    android:text="SBININBB104"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:translationX="2000px"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/ifsc"
+                    app:layout_constraintTop_toBottomOf="@+id/ifscNo" />
+
+                <TextView
+                    android:id="@+id/swift"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="SWIFT Code :"
+                    android:textColor="#D3D3E7"
+                    android:textSize="15sp"
+                    android:translationX="-2000px"
+                    app:layout_constraintEnd_toStartOf="@+id/ifscNo"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ifsc" />
+
+                <TextView
+                    android:id="@+id/accno"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="Account Number"
+                    android:textColor="#D3D3E7"
+                    android:textSize="12sp"
+                    android:translationX="-2000px"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pmCares" />
+
+                <TextView
+                    android:id="@+id/accountNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:text="2121PM20202"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:translationX="2000px"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/accno" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/sbiLogo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:scaleType="fitStart"
+                        android:translationX="-2000px"
+                        app:srcCompat="@drawable/sbi2" />
+
+                    <TextView
+                        android:id="@+id/newDelhi"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:gravity="center"
+                        android:paddingRight="10dp"
+                        android:text="New Delhi Main Branch"
+                        android:textColor="#ffffff"
+                        android:textSize="13sp"
+                        android:translationX="2000px" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="Name"
+                    android:textColor="#D3D3E7"
+                    android:textSize="12sp"
+                    android:translationX="-2000px"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+                <TextView
+                    android:id="@+id/pmCares"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:text="PM CARES"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:translationX="2000px"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/name" />
+
+                <TextView
+                    android:id="@+id/ifsc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="IFSC Code :"
+                    android:textColor="#D3D3E7"
+                    android:textSize="15sp"
+                    android:translationX="-2000px"
+                    app:layout_constraintEnd_toStartOf="@+id/ifscNo"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/accountNumber" />
+
+                <TextView
+                    android:id="@+id/ifscNo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="left"
+                    android:paddingLeft="0dp"
+                    android:text="SBIN0000691"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:translationX="2000px"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/ifsc"
+                    app:layout_constraintTop_toBottomOf="@+id/accountNumber" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/upiCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:alpha="0"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/atmCardView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#E9F4FF"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView27"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/upi" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="UPI ID"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView28"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:text="pmcares@sbi"
+                    android:textColor="#3f3872"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView27" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/upiCardView" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Pay Using"
+            android:textColor="#0B393C"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <ImageView
+            android:id="@+id/aPay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerInside"
+            android:translationX="-2000px"
+            app:layout_constraintBottom_toTopOf="@+id/mPay"
+            app:layout_constraintEnd_toStartOf="@+id/gPay"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView29"
+            app:srcCompat="@drawable/amazon_pay" />
+
+        <ImageView
+            android:id="@+id/gPay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="13dp"
+            android:alpha="0"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@+id/mPay"
+            app:layout_constraintEnd_toStartOf="@+id/tmPay"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/aPay"
+            app:layout_constraintTop_toBottomOf="@+id/textView29"
+            app:srcCompat="@drawable/gpay" />
+
+        <ImageView
+            android:id="@+id/mPay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitXY"
+            android:translationX="-2000px"
+            app:layout_constraintBottom_toTopOf="@+id/vPay"
+            app:layout_constraintEnd_toStartOf="@+id/pPay"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gPay"
+            app:srcCompat="@drawable/mobikwik" />
+
+        <ImageView
+            android:id="@+id/tmPay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerInside"
+            android:translationX="2000px"
+            app:layout_constraintBottom_toTopOf="@+id/pPay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/gPay"
+            app:layout_constraintTop_toBottomOf="@+id/textView29"
+            app:srcCompat="@drawable/paytm" />
+
+        <ImageView
+            android:id="@+id/pPay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="fitXY"
+            android:translationX="2000px"
+            app:layout_constraintBottom_toTopOf="@+id/vPay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/mPay"
+            app:layout_constraintTop_toBottomOf="@+id/gPay"
+            app:srcCompat="@drawable/phonepe" />
+
+        <ImageView
+            android:id="@+id/vPay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginRight="64dp"
+            android:layout_marginBottom="16dp"
+            android:translationY="1000px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mPay"
+            app:srcCompat="@drawable/visa_mastercard" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topOfLayouts"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/all_activity_bg"
+        android:elevation="20dp"
+        android:translationY="-1000px"
+        app:layout_constraintBottom_toTopOf="@+id/bottomPrecautions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/locationBackButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="DONATE"
+            android:textColor="#0B393C"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/locationBackButton"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

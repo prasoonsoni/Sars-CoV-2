@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeActivity"
+            android:icon="@drawable/home"
+            android:title="Home"
+            />
+        <item
+            android:id="@+id/searchCountryActivity"
+            android:icon="@drawable/search"
+            android:title="Search Country"
+            />
+        <item
+            android:id="@+id/precautionsActivity"
+            android:icon="@drawable/precautions"
+            android:title="Precautions" />
+        <item
+            android:id="@+id/symptomsActivity"
+            android:icon="@drawable/symptomes"
+            android:title="Symptoms" />
+
+
+        <item android:title="Others">
+            <menu>
+                <item
+                    android:id="@+id/feedbackActivity"
+                    android:icon="@drawable/contact"
+                    android:title="Feedback" />
+                <item
+                    android:id="@+id/aboutusActivity"
+                    android:icon="@drawable/person"
+                    android:title="About Us" />
+                <item
+                    android:id="@+id/toLogout"
+                    android:icon="@drawable/logout"
+                    android:title="Logout" />
+            </menu>
+        </item>
+    </group>
+</menu>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "795128910357",
+    "project_id": "sars-cov2-c4bea",
+    "storage_bucket": "sars-cov2-c4bea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795128910357:android:dcd07c036ce4523fe3b41c",
+        "android_client_info": {
+          "package_name": "com.prasoonsoni.sars_cov2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "795128910357-r3c3vk9fhqj591s1t4rue8gmv3ei2lmc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbf11ne95Y0VKKk6EI_z5Ed_x-HlmrbDc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "795128910357-r3c3vk9fhqj591s1t4rue8gmv3ei2lmc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

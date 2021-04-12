@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/worldwideConstraintlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animated_bg"
+    tools:context=".worldwide_cases">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topOfLayouts"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/all_activity_bg"
+        android:elevation="20dp"
+        android:translationY="-1000px"
+        app:layout_constraintBottom_toTopOf="@+id/bottomPrecautions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/locationBackButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="WORLDWIDE CASES"
+            android:textColor="#0B393C"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/locationBackButton"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomPrecautions"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/all_activity_bg"
+        android:elevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topOfLayouts">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFF1F2"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <org.eazegraph.lib.charts.PieChart
+                    android:id="@+id/pieChart"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:translationX="0px" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/confirmedLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:translationX="2000px">
+
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/confirmed" />
+
+                        <TextView
+                            android:id="@+id/textView945"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:paddingLeft="10dp"
+                            android:text="CONFIRMED"
+                            android:textColor="#0B393C" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/recoveredLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:translationX="2000px">
+
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/recovered" />
+
+                        <TextView
+                            android:id="@+id/textView946"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:paddingLeft="10dp"
+                            android:text="RECOVERED"
+                            android:textColor="#0B393C" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/deathsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:translationX="2000px">
+
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/deaths" />
+
+                        <TextView
+                            android:id="@+id/textView94g"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:paddingLeft="10dp"
+                            android:text="DEATHS"
+                            android:textColor="#0B393C" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/activeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:translationX="2000px">
+
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/active" />
+
+                        <TextView
+                            android:id="@+id/textView94"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:paddingLeft="10dp"
+                            android:text="ACTIVE"
+                            android:textColor="#0B393C" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#D0DBCF">
+
+                <TextView
+                    android:id="@+id/wActiveCases"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="loading..."
+                    android:textColor="#3E3E70"
+                    android:textSize="18dp"
+                    android:translationX="-2000px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/wTodayConfirmed"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                <TextView
+                    android:id="@+id/wCriticalCases"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="loading..."
+                    android:textColor="#2cb0ff"
+                    android:textSize="18dp"
+                    android:translationX="2000px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/wConfirmedCases"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                <TextView
+                    android:id="@+id/wTodayRecovered"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="loading..."
+                    android:textColor="#25c087"
+                    android:textSize="18dp"
+                    android:translationX="2000px"
+                    app:layout_constraintBottom_toTopOf="@+id/textView14"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/wConfirmedCases"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                <TextView
+                    android:id="@+id/wRecoveredCases"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="loading..."
+                    android:textColor="#3E3E70"
+                    android:textSize="18dp"
+                    android:translationX="-2000px"
+                    app:layout_constraintBottom_toTopOf="@+id/textView13"
+                    app:layout_constraintEnd_toStartOf="@+id/wTodayConfirmed"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                <TextView
+                    android:id="@+id/wConfirmedCases"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="loading..."
+                    android:textColor="#3E3E70"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView11"
+                    app:layout_constraintEnd_toStartOf="@+id/wTodayConfirmed"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15"
+                    android:translationX="-2000px" />
+
+                <TextView
+                    android:id="@+id/wTodayConfirmed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="loading..."
+                    android:textColor="#fc3637"
+                    android:textSize="18dp"
+                    android:translationX="2000px"
+                    app:layout_constraintBottom_toTopOf="@+id/textView12"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/wConfirmedCases"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:text="TODAY CONFIRMED"
+                    android:textColor="#0B393C"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@+id/wTodayConfirmed"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textView15"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:text="CONFIRMED CASES"
+                    android:textColor="#0B393C"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@+id/wConfirmedCases"
+                    app:layout_constraintEnd_toStartOf="@+id/textView16"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:text="TODAY DEATHS"
+                    android:textColor="#0B393C"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@+id/wTodayDeaths"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textView13"
+                    app:layout_constraintTop_toBottomOf="@+id/wTodayRecovered" />
+
+                <TextView
+                    android:id="@+id/wDeaths"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="loading..."
+                    android:textColor="#3E3E70"
+                    android:textSize="18dp"
+                    android:translationX="-2000px"
+                    app:layout_constraintBottom_toTopOf="@+id/textView9"
+                    app:layout_constraintEnd_toStartOf="@+id/wTodayConfirmed"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                <TextView
+                    android:id="@+id/wTodayDeaths"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="loading..."
+                    android:textColor="#f86743"
+                    android:textSize="18dp"
+                    android:translationX="2000px"
+                    app:layout_constraintBottom_toTopOf="@+id/textView10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/wConfirmedCases"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:text="DEATHS"
+                    android:textColor="#0B393C"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@+id/wDeaths"
+                    app:layout_constraintEnd_toStartOf="@+id/textView14"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/wRecoveredCases" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:text="RECOVERED CASES"
+                    android:textColor="#0B393C"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@+id/wRecoveredCases"
+                    app:layout_constraintEnd_toStartOf="@+id/textView12"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/wConfirmedCases" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:text="TODAY RECOVERED"
+                    android:textColor="#0B393C"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@+id/wTodayRecovered"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textView11"
+                    app:layout_constraintTop_toBottomOf="@+id/wTodayConfirmed" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:text=" CRITICAL CASES"
+                    android:textColor="#0B393C"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@+id/wCriticalCases"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textView9"
+                    app:layout_constraintTop_toBottomOf="@+id/wTodayDeaths" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:text="ACTIVE CASES"
+                    android:textColor="#0B393C"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@+id/wActiveCases"
+                    app:layout_constraintEnd_toStartOf="@+id/textView10"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/wDeaths" />
+
+                <View
+                    android:id="@+id/divider4"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/wCriticalCases"
+                    app:layout_constraintStart_toEndOf="@+id/wActiveCases"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/divider5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintBottom_toTopOf="@+id/textView11"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/wConfirmedCases" />
+
+                <View
+                    android:id="@+id/divider6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintBottom_toTopOf="@+id/textView14"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/wTodayRecovered" />
+
+                <View
+                    android:id="@+id/divider7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintBottom_toTopOf="@+id/textView10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/wDeaths" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

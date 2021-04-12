@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/worldwideCardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        app:cardBackgroundColor="#00000000"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="1"
+            android:background="#F6EFE3"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/stateName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="State Name"
+                android:textColor="#0B393C"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/stateActive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="loading..."
+                android:textColor="@color/active"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toTopOf="@+id/stateLastUpdate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/stateDeath"
+                app:layout_constraintTop_toBottomOf="@+id/SDSCSDCS2" />
+
+            <TextView
+                android:id="@+id/stateDeath"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="loading..."
+                android:textColor="@color/deaths"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toTopOf="@+id/stateLastUpdate"
+                app:layout_constraintEnd_toStartOf="@+id/stateActive"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SDSCSDCS" />
+
+            <TextView
+                android:id="@+id/stateRecovered"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="loading..."
+                android:textColor="@color/recovered"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toTopOf="@+id/SDSCSDCS2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/stateConfirmed"
+                app:layout_constraintTop_toBottomOf="@+id/SDSCSDCS4" />
+
+            <TextView
+                android:id="@+id/stateConfirmed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="loading..."
+                android:textColor="@color/confirmed"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toTopOf="@+id/SDSCSDCS"
+                app:layout_constraintEnd_toStartOf="@+id/stateRecovered"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SDSCSDCS3" />
+
+            <TextView
+                android:id="@+id/SDSCSDCS3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="CONFIRMED"
+                android:textColor="@color/confirmed"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/stateConfirmed"
+                app:layout_constraintEnd_toStartOf="@+id/SDSCSDCS4"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/stateName" />
+
+            <TextView
+                android:id="@+id/SDSCSDCS4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="RECOVERED"
+                android:textColor="@color/recovered"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/stateRecovered"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/SDSCSDCS3"
+                app:layout_constraintTop_toBottomOf="@+id/stateName" />
+
+            <TextView
+                android:id="@+id/SDSCSDCS2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="ACTIVE"
+                android:textColor="@color/active"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/stateActive"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/SDSCSDCS"
+                app:layout_constraintTop_toBottomOf="@+id/stateRecovered" />
+
+            <TextView
+                android:id="@+id/SDSCSDCS"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="TOTAL DEATHS"
+                android:textColor="@color/deaths"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/stateDeath"
+                app:layout_constraintEnd_toStartOf="@+id/SDSCSDCS2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/stateConfirmed" />
+
+            <TextView
+                android:id="@+id/stateLastUpdate"
+                android:layout_width="0dp"
+                android:layout_height="21dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="Last updated on 9/4/2021 23:46:51"
+                android:textColor="#231e32"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
