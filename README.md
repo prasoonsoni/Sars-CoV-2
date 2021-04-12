@@ -1,6 +1,10 @@
 # Sars-CoV-2😷
 ## Your personal pandemic assistant 📱
 ## <a id="raw-url" href="https://www.mediafire.com/file/mv5z4f57tg0ne4z/Sars-CoV-2.apk/file">Download APK</a> 
+## API's Used
+- > <a id="raw-url" href="https://www.disease.sh/v2/all">Worldwide Data</a> 
+- > <a id="raw-url" href="https://www.disease.sh/v2/countries">Countries Data</a> 
+- > <a id="raw-url" href="https://api.covid19india.org/data.json">Indian States Data</a> 
 
 Intended User
 > It can be used by anyone.
